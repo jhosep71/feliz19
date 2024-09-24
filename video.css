@@ -113,3 +113,42 @@ video {
 .options {
     margin-top: 20px; /* Espacio entre el video y los botones */
 }
+
+
+/* Responsividad para móviles */
+@media (max-width: 480px) {
+    #message {
+        font-size: 1.5em;
+        top: 10%;
+    }
+
+    .mensaje-animado {
+        position: relative; /* Cambiar a relativo para posicionar debajo del video */
+        font-size: 1em;
+        margin: 5px 0;
+        display: block; /* Hacer que los mensajes ocupen el ancho completo */
+        opacity: 1; /* Asegurarse de que los mensajes sean visibles */
+        text-align: center; /* Centrar texto */
+    }
+
+    .izquierda, .derecha {
+        display: block; /* Cambiar a bloque en móviles */
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .izquierda {
+        margin-top: 10px; /* Espacio encima del mensaje */
+        left: -10px;
+    }
+
+    .derecha {
+        margin-bottom: 20px; /* Espacio debajo del mensaje */
+        right: 10px;
+    }
+
+    
+}
+
+   
+
+   
