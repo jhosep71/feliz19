@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="carta.css">
+</head>
+<body>
+  <main>
+    <!-- Título sobre la carta -->
+    <div id="message">
+      <h1>Una carta para ti <br>♥</h1>
+    </div>
+    
+
+    <div class="container-letter">
+      <div class="cover"></div>
+      <span class="heart">♥</span>
+      <p class="paper" id="mainMessage">
+        En este día especial de amor y amistad, celebremos los lazos que nos unen. Que la alegría y el cariño nos acompañen siempre. ¡Feliz día!
+      </p>
+      <div class="letter"></div>
+    </div>
+    <div class="options">
+      <button id="open">Abrir</button>
+      <button id="close">Cerrar</butto>
+        <button id="volver" onclick="volverAlHome()">Volver</button>
+    </div>
+    <!-- Elemento de audio para la canción -->
+    <audio controls autoplay loop>
+      <source src="sonido/eres_tu.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </main>
+  <script src="carta.js"></script>
+</body>
+</html>

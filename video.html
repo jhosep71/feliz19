@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Sorpresa</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    
+    <div class="video-container">
+        <!-- Título sobre el video -->
+        <div id="message">
+            <h1>Un video para ti <br>♥</h1>
+        </div>
+        
+        <video id="miVideo" controls>
+            <source src="sonido/Un mes más a tu lado ❤🙊.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+
+         <!-- Mensajes animados a los lados del video -->
+        <div class="mensaje-animado izquierda">
+            <span>¡Disfruta este momento especial!</span>
+        </div>
+        <div class="mensaje-animado derecha">
+            <span>¡Este momento es solo para ti!</span>
+        </div>
+
+        <div class="options">
+            <button id="play" onclick="reproducirVideo()">Reproducir Video</button>
+            <button id="stop" onclick="pausarVideo()">Pausar Video</button>
+            <button id="volver" onclick="volverAlHome()">Volver</button>
+        </div>
+    </div>
+    <script src="video.js"></script>
+</body>
+</html>

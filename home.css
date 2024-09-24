@@ -1,0 +1,151 @@
+body {
+    background-color: #ffe5e5;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+   
+}
+.mensaje {
+    margin-top: 5%;
+    font-size: 3rem;
+    color: #ff0066;
+}
+.mensaje span {
+    display: inline-block;
+    animation: aparecer 2s ease-in-out forwards;
+    opacity: 0;
+}
+.mensaje span:nth-child(1) { animation-delay: 0.5s; }
+.mensaje span:nth-child(2) { animation-delay: 1s; }
+.mensaje span:nth-child(3) { animation-delay: 1.5s; }
+.mensaje span:nth-child(4) { animation-delay: 2s; }
+@keyframes aparecer {
+    to { opacity: 1; }
+}
+.corazon {
+    position: absolute;
+    bottom: -50px;
+    animation: subir 10s infinite;
+}
+@keyframes subir {
+    0% { bottom: -50px; transform: scale(0.5); }
+    100% { bottom: 100vh; transform: scale(1); }
+}
+audio {
+    display: none;
+}
+
+
+.sorpresas {
+    margin-top: 50px;
+}
+
+
+.mensaje-romantico {
+    margin-top: 20px;
+}
+
+.linea {
+    display: none; /* Ocultar inicialmente */
+    font-size: 1.5rem;
+    color: #ff66b2;
+    animation: aparecer 1s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Estilo para el botón */
+/* Estilo para el contenedor del botón */
+.button {
+    display: inline-block; /* Permite que se comporten como botones */
+    margin: 10px; /* Espaciado entre botones */
+}
+
+/* Estilo para el enlace dentro del botón */
+.button a {
+    display: block; /* Hace que el enlace se comporte como un botón */
+    background-color: #ff66b2; /* Fondo amarillo */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
+    font-size: 18px; /* Tamaño de fuente */
+    text-align: center; /* Centra el texto */
+    color: black; /* Color del texto */
+    border-radius: 20px; /* Esquinas redondeadas */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s ease-in-out; /* Transición suave para el color de fondo */
+}
+
+/* Efecto de resplandor al pasar el cursor sobre el enlace */
+.button a:hover {
+    background-color: #ff0066; /* Cambia el color de fondo al pasar el mouse a naranja */
+    box-shadow: 0 0 10px #ff66b2, 0 0 20px #ff66b2, 0 0 30px #ff66b2; /* Efecto de resplandor amarillo */
+}
+
+
+.texto-especial {
+    font-family: 'Roboto', sans-serif; /* Cambia a la fuente que prefieras */
+    font-size: 25px; /* Ajusta el tamaño de la fuente */
+    color: #ff69b4; /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para efecto 3D */
+    animation: bounce 2s infinite; /* Animación */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Efecto de rebote */
+    }
+}
+
+
+
+.texto-luminoso {
+    font-family: 'Roboto', sans-serif; /* Cambia a la fuente que prefieras */
+    font-size: 25px; /* Ajusta el tamaño de la fuente */
+    color: #ff1493; /* Color del texto */
+    text-shadow: 0 0 5px rgba(255, 20, 147, 0.8), 0 0 10px rgba(255, 20, 147, 0.6), 0 0 15px rgba(255, 20, 147, 0.4); /* Efecto de brillo */
+    animation: pulse 1.5s infinite; /* Animación de latido */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.letra-3d {
+    position: relative; /* Necesario para el efecto 3D */
+    color: #FF69B4; /* Color del texto */
+    text-shadow: 
+        1px 1px 0 rgba(0, 0, 0, 0.2), 
+        2px 2px 0 rgba(0, 0, 0, 0.2), 
+        3px 3px 0 rgba(0, 0, 0, 0.2);
+    animation: latido 1s infinite; /* Animación de latido */
+}
+
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    }
+}

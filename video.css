@@ -1,0 +1,115 @@
+body {
+    background-color: #ffe5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.video-container {
+    position: relative;
+    text-align: center;
+}
+
+video {
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+
+
+
+.options {
+    display: flex;
+    gap: 5rem;
+  
+    & button {
+      color: #ff3234;
+      font-weight: 600;
+      border-radius: 3px;
+      background: #fad7df;
+      padding: 0.5rem 1rem;
+      border: 1px solid #fe3334;
+      cursor: pointer;
+    }
+  
+    & button:hover {
+      background: #ff989e;
+      color: white;
+    }
+  }
+
+
+  /*video  */
+ #message {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+  }
+  
+  #message h1 {
+    font-size: 3rem; /* Tamaño de la fuente */
+    text-align: center; /* Alinear el texto al centro */
+    font-weight: 600; /* Grosor de la fuente */
+    animation: palpitation 2s ease-in-out infinite; /* Añadir animación de palpitar */
+    line-height: 4rem; /* Altura de línea para un mejor espaciado */
+    color: #FF1493; /* Color de la fuente */
+  }
+  
+  /* Definición de la animación de palpitar */
+  @keyframes palpitation {
+    0%, 100% {
+        transform: scale(1); /* Tamaño original */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta el tamaño para el efecto de palpitar */
+    }
+  }
+  
+
+  .mensaje-animado {
+    position: absolute; /* Permite posicionar el mensaje sobre el video */
+    z-index: 10; /* Asegura que el texto esté encima del video */
+    color: #FF1493; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    animation: latido 2s ease-in-out infinite; /* Añadir animación de latido */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease; /* Suaviza la transición de opacidad */
+}
+
+/* Posiciones de los mensajes */
+.izquierda {
+    left: -350px; /* Ajusta la distancia desde la izquierda */
+    top: 30%; /* Ajusta esta propiedad para mover el mensaje hacia arriba o hacia abajo */
+    transform: translateY(-50%); /* Corrige el centrado vertical */
+}
+
+.derecha {
+    right: -350px; /* Ajusta la distancia desde la derecha */
+    top: 30%; /* Ajusta esta propiedad para mover el mensaje hacia arriba o hacia abajo */
+    transform: translateY(-50%); /* Corrige el centrado vertical */
+}
+
+/* Animación de latido y aparición */
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1); /* Tamaño original */
+        opacity: 0; /* Oculto al inicio y al final */
+    }
+    25% {
+        transform: scale(1.2); /* Aumenta el tamaño para el efecto de latido */
+        opacity: 1; /* Visible en el punto medio */
+    }
+    50% {
+        opacity: 0; /* Oculto en el medio */
+    }
+    75% {
+        transform: scale(1.2); /* Aumenta el tamaño para el efecto de latido */
+        opacity: 1; /* Visible en el punto medio */
+    }
+}
+
+.options {
+    margin-top: 20px; /* Espacio entre el video y los botones */
+}
